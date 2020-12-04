@@ -1,0 +1,23 @@
+package com.atmaekus.javastudy;
+/**
+ * 
+ * @Description 水仙花数
+ * @version
+ * @author maekus
+ * @date 2020年11月21日上午8:53:21
+ */
+public class ShuiXianFlower {
+	public static void main(String[] args) {
+		int ge=0;
+		int shi=0;
+		int bai=0;
+		for(int i=100;i<=999;i++) {
+			bai=i/100;
+			shi=(i-(bai*100))/10;
+			ge=i%10;
+			if((bai*bai*bai+shi*shi*shi+ge*ge*ge)==i) {
+				System.out.println(i+" ");
+			}
+		}
+	}
+}

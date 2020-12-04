@@ -1,0 +1,23 @@
+package com.atmaekus.javastudy;
+import java.util.Scanner;
+
+public class IfTest {
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		
+		System.out.println("请输入你的身高（cm）");
+		int height=scan.nextInt();
+		System.out.println("请输入你的财富");
+		int wealth=scan.nextInt();
+		System.out.println("请输入是否帅");
+		boolean isHandsome=scan.nextBoolean();
+		
+		if(height>=180&&wealth>=1&&isHandsome) {
+			System.out.println("嫁了吧");
+		}else if(height>=180||wealth>=1||isHandsome) {
+			System.out.println("可以了");
+		}else {
+			System.out.println("算了吧");
+		}
+	}
+}
